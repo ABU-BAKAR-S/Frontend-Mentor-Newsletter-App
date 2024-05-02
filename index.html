@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="newsletter,Newsletter,NEWSLETTER" />
+    <meta
+      name="keywords"
+      content="html,css and javascript,HTML,CSS,JAVASCRIPT"
+    />
+    <meta name="author" content="Abu Bakar Siddik" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+    <div class="container">
+      <div class="photo_content">
+        <img
+          src="assets/images/illustration-sign-up-mobile.svg"
+          alt="illustration-sign-up-mobile"
+          class="mobile_photo"
+        />
+        <img
+          src="assets/images/illustration-sign-up-desktop.svg"
+          alt="illustration-sign-up-desktop"
+          class="desktop_photo"
+        />
+      </div>
+      <div class="form_content">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <div class="list_item">
+          <div class="list">
+            <img src="assets/images/icon-list.svg" alt="icon-list" />
+            <span>Product discovery and building what matters</span>
+          </div>
+          <div class="list">
+            <img src="assets/images/icon-list.svg" alt="icon-list" />
+            <span>Measuring to ensure updates are a success</span>
+          </div>
+          <div class="list">
+            <img src="assets/images/icon-list.svg" alt="icon-list" />
+            <span>And much more!</span>
+          </div>
+        </div>
+        <form action="">
+          <div class="form_head">
+            <small>Email address</small>
+            <span class="emailError">Valid email required</span>
+          </div>
+          <input
+            type="email"
+            placeholder="email@company.com"
+            class="email_field"
+            onkeyup="validEmail()"
+          />
+          <button class="submit_btn" onclick="submitForm()">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <div class="success_message_box">
+      <div class="success_message">
+        <img
+          src="assets/images/icon-success.svg"
+          alt="icon-success"
+          class="success_img"
+        />
+        <h1>Thanks for subscribing!</h1>
+        <small
+          >A confirmation email has been sent to <b>ash@loremcompany.com</b> .
+          Please open it and click the button inside to confirm your
+          subscription.</small
+        >
+      </div>
+      <input
+        type="button"
+        value="Dismiss message"
+        class="dismiss_btn"
+        onclick="dismiss_box()"
+      />
+    </div>
+    <!-- Success message end -->
+
+    <script src="style.js"></script>
+  </body>
+</html>
